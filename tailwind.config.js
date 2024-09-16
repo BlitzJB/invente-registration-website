@@ -13,7 +13,11 @@ module.exports = {
       },
     },
     extend: {
+      borderWidth: {
+        '3': '3px',
+      },
       colors: {
+        'dark-green': '#006400',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
