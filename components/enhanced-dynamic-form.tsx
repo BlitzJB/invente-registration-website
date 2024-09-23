@@ -8,6 +8,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useDropzone } from 'react-dropzone'
 import { v4 as uuidv4 } from 'uuid'
 import debounce from 'lodash/debounce'
+// @ts-ignore
 import mime from 'mime-types';
 
 const rulebookPaths = {
@@ -24,7 +25,7 @@ const contentSections = [
   {
     type: 'content',
     title: 'Welcome to INVENTE\'24!',
-    description: 'Get ready for an exhilarating journey through innovation and creativity. Let\'s kickstart your registration for the ultimate tech experience!',
+    description: 'Get ready for an exhilarating journey through innovation and creativity. Let\'s kickstart your registration for the ultimate tech experience! Contact Tanu @ +91 96009 78080 for any queries.',
     background: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80',
   },
   {
@@ -115,8 +116,8 @@ const contentSections = [
       { id: 'startup_showdown', text: 'Startup Showdown', description: 'Pitch your futuristic business ideas', image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'technical' },
       { id: 'econexus', text: 'EcoNexus', description: 'Apply economic concepts to real-world scenarios', image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'technical' },
       { id: 'youth_economics_summit', text: 'Youth Economics Summit', description: 'Showcase your economic research and ideas', image: 'https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'technical' },
-      { id: 'resume_roulette', text: 'Resume Roulette', description: 'Create resumes for surprise job descriptions', image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'non-technical' },
-      { id: 'sense_and_sensibility', text: 'Sense and Sensibility: Media Edition', description: 'Test your communication and pop culture knowledge', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'non-technical' },
+      // { id: 'resume_roulette', text: 'Resume Roulette', description: 'Create resumes for surprise job descriptions', image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'non-technical' },
+      // { id: 'sense_and_sensibility', text: 'Sense and Sensibility: Media Edition', description: 'Test your communication and pop culture knowledge', image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80', hasRulebook: true, eventType: 'non-technical' },
     ],
   },
   {

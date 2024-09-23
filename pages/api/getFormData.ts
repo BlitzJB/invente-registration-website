@@ -59,7 +59,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   // Check bearer auth
   if (!bearerAuth(req, res)) {
-    return
+    return res.status(401).json({ message: 'Invalid token' })
   }
 
   if (req.method === 'GET') {
